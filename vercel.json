@@ -2,31 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "web/frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "buildCommand": "npm run build",
-        "distDir": "dist"
-      }
-    },
-    {
       "src": "web/index-new.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "web/frontend/dist/$1"
-    },
-    {
-      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|gif|svg))",
-      "dest": "web/frontend/dist/$1"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "web/index-new.js"
-    },
     {
       "src": "/(.*)",
       "dest": "web/index-new.js"
