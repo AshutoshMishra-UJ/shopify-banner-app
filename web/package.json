@@ -5,8 +5,9 @@
     "debug": "node --inspect-brk index-new.js",
     "dev": "cross-env NODE_ENV=development nodemon index-new.js --watch ./",
     "start": "cross-env NODE_ENV=production node index-new.js",
-    "build": "npm run build:frontend",
-    "build:frontend": "cd frontend && npm run build"
+    "build": "cd frontend && npm install && npm run build",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "postinstall": "cd frontend && npm install"
   },
   "type": "module",
   "engines": {

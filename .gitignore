@@ -7,7 +7,7 @@ yarn-error.log*
 # Build outputs
 dist/
 build/
-web/frontend/dist/
+# Keep web/frontend/dist/ for deployment
 
 # Environment variables
 .env
