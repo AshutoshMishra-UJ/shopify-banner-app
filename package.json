@@ -1,0 +1,30 @@
+{
+  "name": "shopify-banner-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "cd web && npm install && cd frontend && npm install && npm run build",
+    "start": "cd web && node index-new.js",
+    "dev": "cd web && npm run dev",
+    "deploy": "npm run build && vercel --prod",
+    "vercel-build": "cd web && npm install && cd frontend && npm install && npm run build",
+    "ext:build": "shopify app build --include=banner-extension",
+    "ext:dev": "shopify app dev --include=banner-extension"
+  },
+  "dependencies": {
+    "@oclif/core": "^2",
+    "@shopify/admin-api-client": "^0.2.0",
+    "@shopify/app": "^3.58.2",
+    "@shopify/cli": "^3.58.2"
+  },
+  "author": "your-name",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">= 18.12.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}

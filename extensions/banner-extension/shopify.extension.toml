@@ -1,0 +1,7 @@
+api_version = "2024-07"
+
+[[extensions]]
+type = "theme"
+name = "Banner Extension"
+
+[extensions.settings]
