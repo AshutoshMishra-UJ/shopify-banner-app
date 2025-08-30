@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "cd web && npm install && npm run build:frontend",
   "builds": [
     {
       "src": "web/index-new.js",

@@ -67,7 +67,7 @@ app.post("/api/banner/config", (req, res) => {
 });
 
 // Serve static files
-const staticPath = process.env.NODE_ENV === 'production' ? 'dist' : 'frontend/dist';
+const staticPath = 'frontend/dist';
 const staticDir = join(__dirname, staticPath);
 
 if (existsSync(staticDir)) {

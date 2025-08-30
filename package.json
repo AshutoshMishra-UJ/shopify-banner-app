@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "cd web && npm install && cd frontend && npm install && npm run build",
-    "start": "cd web && node index-new.js",
+    "build": "cd web && npm install && npm run build:frontend && cd ..",
+    "start": "cd web && npm start",
     "dev": "cd web && npm run dev",
     "deploy": "npm run build && vercel --prod",
-    "vercel-build": "cd web && npm install && cd frontend && npm install && npm run build",
+    "vercel-build": "cd web && npm install && npm run build:frontend",
     "ext:build": "shopify app build --include=banner-extension",
     "ext:dev": "shopify app dev --include=banner-extension"
   },
